@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #fff2b1, #ffadf4);
+        }
+        .navbar {
+            background-color: #ff7070;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+		.navbar img {
+			margin-top: 10px;
+			margin-left: 10px;
+			height: 30px;
+			width: 35px;
+		}
+        .header-content {
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+			margin-top: 10px;
+        }
+        .content {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            display: flex;
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+        .text-content {
+            flex: 2;
+			text-align: left;
+			margin-bottom: 20px;
+			margin-top: 10px;
+        }
+        .center {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+        }
+        .highlight {
+            color: #ff7070;
+            font-weight: bold;
+        }
+		p {
+			margin-left: 50px;
+            margin-right: 50px;
+		}
+		button {
+			background-color: #ff7070;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 50px;
+		}
+		.image-grid {
+			display: flex;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+
+		.image {
+		overflow: hidden;
+		}
+
+		.image img {
+		width: 100%;
+		display: block;
+		}
+
+		.card-body {
+			background-color: #ff7070
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
+			justify-content: center;
+		}
+
+		.image-item {
+			text-align: center;
+		}
+
+		.image-item img {
+			max-width: 100%;
+			height: auto;
+		}
+    </style>
+</head>
+<body>
+	<section>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#order">Order</a>
+        <a href="#food">Food</a>
+        <a href="#restaurant">Restaurant</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+		<img src="images/menu-bar.png" alt="Lorem ipsum">
+    </div>
+    <div class="content">
+        <div class="text-content">
+			<div class="header-content">
+				<h2>LOREM IPSUM</h2>
+			</div>
+			<p class="mb-4">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
+			Malesuada metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut
+			tristique. Cras rutrum nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt orare pretium.
+			Sed pulvinar, massa ac porta viverra.
+			</p>
+			<button>Click Me</button>
+		</div>
+		<img class="center" src="images/pexels-robin-stickel-70497.jpg" alt="Lorem ipsum">
+    </div>
+	</section>
+	<section>
+		<div class="image-grid">
+			<div colspan="3">
+				<div class="image-item">
+				<img src="images/pexels-rachel-claire-6752433.jpg" alt="Image 1">
+				<img src="images/pexels-eva-bronzini-6141651.jpg" alt="Image 2">
+				</div>
+			</div>
+			<div class="image-item">
+				<img src="images/pexels-mister-mister-3434523.jpg" alt="Image 3">
+			</div>	
+		</div>
+		
+		<div class="card">
+			<div class="card-body">
+				<p>LOREM IPSUM</p>
+				<div className="bg-[#FFADAD] p-6 col-span-1">
+					<h2 className="text-2xl font-bold mb-4">LOREM IPSUM SET ADEMIR</h2>
+					<p>Click
+					<img src="images/icons8-arrow-30.png" alt="Placeholder">
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
